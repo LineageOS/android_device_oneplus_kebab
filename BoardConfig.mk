@@ -5,7 +5,7 @@
 #
 
 # Include the common OEM chipset BoardConfig.
--include device/oneplus/sm8250-common/BoardConfigCommon.mk
+include device/oneplus/sm8250-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/oneplus/kebab
 
