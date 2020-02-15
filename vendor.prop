@@ -2,5 +2,9 @@
 ro.crypto.dm_default_key.options_format.version=2
 ro.crypto.volume.metadata.method=dm-default-key
 
+# Graphics
+ro.surface_flinger.set_idle_timer_ms=4000
+ro.surface_flinger.set_touch_timer_ms=4000
+
 # USB
 vendor.usb.product_string=OnePlus 8T
