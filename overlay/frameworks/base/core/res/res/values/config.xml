@@ -371,16 +371,15 @@
          Note that a physical cutout should be configured in pixels for the best results.
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">
-        M 0, 0
-        H 54
-        V 48
-        H 0
-        L 0, 0
-        @dp
+        M 0.0, 0.0
+        h 150
+        v 96
+        h -150
+        Z
         @left
     </string>
 
     <!-- Height of the status bar -->
-    <dimen name="status_bar_height_portrait">132px</dimen>
-    <dimen name="status_bar_height_landscape">132px</dimen>
+    <dimen name="status_bar_height_portrait">104px</dimen>
+    <dimen name="status_bar_height_landscape">104px</dimen>
 </resources>
