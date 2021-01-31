@@ -370,14 +370,7 @@
          appended after the path string to interpret coordinates in dp instead of px units.
          Note that a physical cutout should be configured in pixels for the best results.
          -->
-    <string translatable="false" name="config_mainBuiltInDisplayCutout">
-        M 0.0, 0.0
-        h 150
-        v 96
-        h -150
-        Z
-        @left
-    </string>
+    <string translatable="false" name="config_mainBuiltInDisplayCutout">M -407 68.5 A 34 34 0 0 1 -475 68.5 A 34 34 0 0 1 -407 68.5 Z M -475,0 L -407,0 Z M -540,0 L -540,102.5 Z</string>
 
     <!-- Height of the status bar -->
     <dimen name="status_bar_height_portrait">104px</dimen>
