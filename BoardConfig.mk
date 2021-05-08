@@ -36,4 +36,4 @@ SOONG_CONFIG_OPLUS_LINEAGE_TOUCH_HAL := INCLUDE_DIR
 SOONG_CONFIG_OPLUS_LINEAGE_TOUCH_HAL_INCLUDE_DIR := $(DEVICE_PATH)/touch/include
 
 # Include the proprietary files BoardConfig.
--include vendor/oneplus/kebab/BoardConfigVendor.mk
+include vendor/oneplus/kebab/BoardConfigVendor.mk
