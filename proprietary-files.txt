@@ -137,6 +137,9 @@ vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
 
+# ODM feature list
+odm/etc/odm_feature_list
+
 # Sensors
 vendor/etc/sensors/config/bmi26x_0.json
 vendor/etc/sensors/config/bmi26x_0_crt.json
