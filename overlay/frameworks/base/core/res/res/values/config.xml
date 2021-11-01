@@ -379,4 +379,11 @@
          black in software (to avoid aliasing or emulate a cutout that is not physically existent).
          -->
     <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
+
+    <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
+    <integer-array name="config_udfps_sensor_props" translatable="false" >
+        <item>540</item>  <!-- <item>sensorLocationX</item> -->
+        <item>1910</item> <!-- <item>sensorLocationY</item> -->
+        <item>87</item>   <!-- <item>sensorRadius</item> -->
+    </integer-array>
 </resources>
