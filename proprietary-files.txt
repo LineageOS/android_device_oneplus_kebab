@@ -105,7 +105,6 @@ vendor/lib64/libarm_proxy_skel.so
 vendor/lib64/libgf_g6_ud_hal.so
 vendor/lib64/libgf_ud_hal.so
 vendor/lib64/libhvx_proxy_stub.so
-vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1.so
 
 # Iris
 vendor/bin/hw/vendor.pixelworks.hardware.display.iris-service
