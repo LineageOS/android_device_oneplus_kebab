@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d7c2b129_67c92aac",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 387,
+      "author": {
+        "id": 23396
+      },
+      "writtenOn": "2022-01-29T19:43:54Z",
+      "side": 1,
+      "message": "It\u0027s 92, [(147/2)+5]",
+      "revId": "74df3d1b9ad8784a7e04b233f117f594cae9f687",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
