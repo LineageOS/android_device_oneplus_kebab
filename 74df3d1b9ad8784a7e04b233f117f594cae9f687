@@ -34,6 +34,24 @@
       "parentUuid": "d7c2b129_67c92aac",
       "revId": "74df3d1b9ad8784a7e04b233f117f594cae9f687",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9208edf1_366c542c",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 387,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-01-29T19:45:26Z",
+      "side": 1,
+      "message": "read commit message?",
+      "parentUuid": "d7c2b129_67c92aac",
+      "revId": "74df3d1b9ad8784a7e04b233f117f594cae9f687",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
