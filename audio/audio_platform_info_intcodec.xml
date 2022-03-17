@@ -548,6 +548,8 @@
         <device name="SND_DEVICE_IN_SPEAKER_TMIC_AEC_NS" interface="TX_CDC_DMA_TX_3"/>
         <!--Zhao.Pan@MULTIMEDIA.AUDIODRIVER.HAL, Add for tmic interface-->
         <device name="SND_DEVICE_IN_SVA_RE_MIC" interface="TX_CDC_DMA_TX_3"/>
+        <device name="SND_DEVICE_OUT_VOICE_HANDSET_TMUS" acdb_id="7"/>
+        <device name="SND_DEVICE_IN_VOICE_DMIC_TMUS" acdb_id="41"/>
     </backend_names>
     <!-- below values are for ref purpose to OEM, doesn't contain actual hardware info on MTP -->
     <microphone_characteristics>
