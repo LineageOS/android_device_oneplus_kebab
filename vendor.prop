@@ -1,3 +1,6 @@
+# Bluetooth
+bluetooth.device.default_name=OnePlus 8T
+
 # Crypto
 ro.crypto.dm_default_key.options_format.version=2
 ro.crypto.volume.metadata.method=dm-default-key
