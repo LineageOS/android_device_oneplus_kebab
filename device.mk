@@ -48,7 +48,8 @@ PRODUCT_COPY_FILES += \
 
 # Device init scripts
 PRODUCT_PACKAGES += \
-    fstab.qcom
+    fstab.qcom \
+    fstab.qcom.ramdisk
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
