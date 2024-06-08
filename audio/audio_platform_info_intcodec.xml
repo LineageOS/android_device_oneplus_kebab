@@ -100,7 +100,7 @@
         <usecase name="USECASE_AUDIO_RECORD_COMPRESS2" type="in" id="37" />
         <usecase name="USECASE_INCALL_REC_UPLINK" type="in" id="23" />
         <usecase name="USECASE_INCALL_REC_DOWNLINK" type="in" id="23" />
-        <usecase name="USECASE_INCALL_REC_UPLINK_AND_DOWNLINK" type="in" id="23" />
+        <usecase name="USECASE_INCALL_REC_UPLINK_AND_DOWNLINK" type="in" id="1" />
         <!--Jianfeng.Qiu@PSW.MM.AudioDriver.feature.1234017, 2017/04/05, Add for ktv loopback-->
         <usecase name="USECASE_AUDIO_OPLUS_KTV" type="in" id="34" />
         <usecase name="USECASE_AUDIO_OPLUS_KTV" type="out" id="34" />
@@ -141,6 +141,12 @@
         <param key="enable_hp_impedance_match" value="true"/>
         <param key="hp_impedance_match_threshold" value="50"/>
         <!--Run.Zhang@MULTIMEDIA.AUDIODRIVER.FEATURE, 2021/04/09 , Add for headphone volume match to impedance end-->
+        <!-- Run.Zhang@MULTIMEDIA.AUDIODRIVER.OPLUS_FEATURE_OPREC_SUPPORT, 2021/08/09, Add for voice car downlink mute -->
+        <param key="enable_car_vc_dl_mute" value="true"/>
+        <!-- Run.Zhang@MULTIMEDIA.AUDIODRIVER.OPLUS_FEATURE_OPREC_SUPPORT, 2021/08/09, Add for voice car downlink mute end -->
+        <!-- zhangrun@MULTIMEDIA.AUDIODRIVER.OPLUS_FEATURE_OCAR_AUDIO, 2022/02/22, add for support call record in ocar mode -->
+        <param key="ocar_mode_support" value="true"/>
+        <!-- zhangrun@MULTIMEDIA.AUDIODRIVER.OPLUS_FEATURE_OCAR_AUDIO, 2022/02/22, add for support call record in ocar mode end -->
     </config_params>
     <gain_db_to_level_mapping>
         <gain_level_map db="-59" level="5"/>

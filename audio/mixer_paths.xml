@@ -297,6 +297,10 @@
     <!-- RT Proxy Cal end -->
 
     <!-- Incall Recording -->
+    <!-- zhangrun@MULTIMEDIA.AudioDriver.HAL, 2022/01/30, add for support call record in ocar mode -->
+    <ctl name="MultiMedia2 Mixer VOC_REC_UL" value="0"/>
+    <ctl name="MultiMedia2 Mixer VOC_REC_DL" value="0"/>
+    <!-- zhangrun@MULTIMEDIA.AudioDriver.HAL, 2022/01/30, add for support call record in ocar mode end -->
     <ctl name="MultiMedia1 Mixer VOC_REC_UL" value="0" />
     <ctl name="MultiMedia1 Mixer VOC_REC_DL" value="0" />
     <ctl name="MultiMedia8 Mixer VOC_REC_UL" value="0" />
@@ -990,6 +994,10 @@
         <path name="deep-buffer-playback bt-sco" />
     </path>
 
+    <path name="deep-buffer-playback bt-sco-swb">
+        <path name="deep-buffer-playback bt-sco-wb" />
+    </path>
+
     <path name="deep-buffer-playback afe-proxy">
         <ctl name="AFE_PCM_RX Audio Mixer MultiMedia1" value="1" />
     </path>
@@ -1039,6 +1047,10 @@
         <path name="deep-buffer-playback speaker" />
     </path>
 
+    <path name="deep-buffer-playback speaker-and-bt-sco-swb">
+        <path name="deep-buffer-playback speaker-and-bt-sco-wb" />
+    </path>
+
     <path name="low-latency-playback">
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia5" value="1" />
     </path>
@@ -1062,6 +1074,10 @@
     <path name="low-latency-playback bt-sco-wb">
         <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="low-latency-playback bt-sco" />
+    </path>
+
+    <path name="low-latency-playback bt-sco-swb">
+        <path name="low-latency-playback bt-sco-wb" />
     </path>
 
     <path name="low-latency-playback speaker-and-display-port">
@@ -1122,6 +1138,10 @@
         <path name="low-latency-playback speaker" />
     </path>
 
+    <path name="low-latency-playback speaker-and-bt-sco-swb">
+        <path name="low-latency-playback speaker-and-bt-sco-wb" />
+    </path>
+
     <path name="audio-ull-playback">
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia8" value="1" />
     </path>
@@ -1169,6 +1189,10 @@
         <path name="audio-ull-playback bt-sco" />
     </path>
 
+    <path name="audio-ull-playback bt-sco-swb">
+        <path name="audio-ull-playback bt-sco-wb" />
+    </path>
+
     <path name="audio-ull-playback speaker-and-display-port">
         <path name="audio-ull-playback display-port" />
         <path name="audio-ull-playback speaker" />
@@ -1194,6 +1218,10 @@
     <path name="audio-ull-playback speaker-and-bt-sco-wb">
         <path name="audio-ull-playback bt-sco-wb" />
         <path name="audio-ull-playback speaker" />
+    </path>
+
+    <path name="audio-ull-playback speaker-and-bt-sco-swb">
+        <path name="audio-ull-playback speaker-and-bt-sco-wb" />
     </path>
 
     <path name="multi-channel-playback display-port">
@@ -1235,6 +1263,10 @@
     <path name="compress-offload-playback bt-sco-wb">
         <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="compress-offload-playback bt-sco" />
+    </path>
+
+    <path name="compress-offload-playback bt-sco-swb">
+        <path name="compress-offload-playback bt-sco-wb" />
     </path>
 
     <path name="compress-offload-playback speaker-and-display-port">
@@ -1299,6 +1331,10 @@
         <path name="compress-offload-playback speaker" />
     </path>
 
+    <path name="compress-offload-playback speaker-and-bt-sco-swb">
+        <path name="compress-offload-playback speaker-and-bt-sco-wb" />
+    </path>
+
     <path name="compress-offload-playback2">
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia7" value="1" />
     </path>
@@ -1322,6 +1358,10 @@
     <path name="compress-offload-playback2 bt-sco-wb">
         <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="compress-offload-playback2 bt-sco" />
+    </path>
+
+    <path name="compress-offload-playback2 bt-sco-swb">
+        <path name="compress-offload-playback2 bt-sco-wb" />
     </path>
 
     <path name="compress-offload-playback2 speaker-and-display-port">
@@ -1387,6 +1427,10 @@
         <path name="compress-offload-playback2 speaker" />
     </path>
 
+    <path name="compress-offload-playback2 speaker-and-bt-sco-swb">
+        <path name="compress-offload-playback2 speaker-and-bt-sco-wb" />
+    </path>
+
     <path name="compress-offload-playback3">
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia10" value="1" />
     </path>
@@ -1406,6 +1450,10 @@
     <path name="compress-offload-playback3 bt-sco-wb">
         <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="compress-offload-playback3 bt-sco" />
+    </path>
+
+    <path name="compress-offload-playback3 bt-sco-swb">
+        <path name="compress-offload-playback3 bt-sco-wb" />
     </path>
 
     <path name="compress-offload-playback3 speaker-and-display-port">
@@ -1470,6 +1518,10 @@
         <path name="compress-offload-playback3 speaker" />
     </path>
 
+    <path name="compress-offload-playback3 speaker-and-bt-sco-swb">
+        <path name="compress-offload-playback3 speaker-and-bt-sco-wb" />
+    </path>
+
     <path name="compress-offload-playback4">
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia11" value="1" />
     </path>
@@ -1489,6 +1541,10 @@
     <path name="compress-offload-playback4 bt-sco-wb">
         <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="compress-offload-playback4 bt-sco" />
+    </path>
+
+    <path name="compress-offload-playback4 bt-sco-swb">
+        <path name="compress-offload-playback4 bt-sco-wb" />
     </path>
 
     <path name="compress-offload-playback4 speaker-and-display-port">
@@ -1554,6 +1610,10 @@
         <path name="compress-offload-playback4 speaker" />
     </path>
 
+    <path name="compress-offload-playback4 speaker-and-bt-sco-swb">
+        <path name="compress-offload-playback4 speaker-and-bt-sco-wb" />
+    </path>
+
     <path name="compress-offload-playback5">
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia12" value="1" />
     </path>
@@ -1573,6 +1633,10 @@
     <path name="compress-offload-playback5 bt-sco-wb">
         <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="compress-offload-playback5 bt-sco" />
+    </path>
+
+    <path name="compress-offload-playback5 bt-sco-swb">
+        <path name="compress-offload-playback5 bt-sco-wb" />
     </path>
 
     <path name="compress-offload-playback5 speaker-and-display-port">
@@ -1637,6 +1701,10 @@
         <path name="compress-offload-playback5 speaker" />
     </path>
 
+    <path name="compress-offload-playback5 speaker-and-bt-sco-swb">
+        <path name="compress-offload-playback5 speaker-and-bt-sco-wb" />
+    </path>
+
     <path name="compress-offload-playback6">
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia13" value="1" />
     </path>
@@ -1656,6 +1724,10 @@
     <path name="compress-offload-playback6 bt-sco-wb">
         <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="compress-offload-playback6 bt-sco" />
+    </path>
+
+    <path name="compress-offload-playback6 bt-sco-swb">
+        <path name="compress-offload-playback6 bt-sco-wb" />
     </path>
 
     <path name="compress-offload-playback6 speaker-and-display-port">
@@ -1720,6 +1792,10 @@
         <path name="compress-offload-playback6 speaker" />
     </path>
 
+    <path name="compress-offload-playback6 speaker-and-bt-sco-swb">
+        <path name="compress-offload-playback6 speaker-and-bt-sco-wb" />
+    </path>
+
     <path name="compress-offload-playback7">
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia14" value="1" />
     </path>
@@ -1739,6 +1815,10 @@
     <path name="compress-offload-playback7 bt-sco-wb">
         <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="compress-offload-playback7 bt-sco" />
+    </path>
+
+    <path name="compress-offload-playback7 bt-sco-swb">
+        <path name="compress-offload-playback7 bt-sco-wb" />
     </path>
 
     <path name="compress-offload-playback7 speaker-and-display-port">
@@ -1803,6 +1883,10 @@
         <path name="compress-offload-playback7 speaker" />
     </path>
 
+    <path name="compress-offload-playback7 speaker-and-bt-sco-swb">
+        <path name="compress-offload-playback7 speaker-and-bt-sco-wb" />
+    </path>
+
     <path name="compress-offload-playback8">
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia15" value="1" />
     </path>
@@ -1822,6 +1906,10 @@
     <path name="compress-offload-playback8 bt-sco-wb">
         <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="compress-offload-playback8 bt-sco" />
+    </path>
+
+    <path name="compress-offload-playback8 bt-sco-swb">
+        <path name="compress-offload-playback8 bt-sco-wb" />
     </path>
 
     <path name="compress-offload-playback8 speaker-and-display-port">
@@ -1886,6 +1974,10 @@
         <path name="compress-offload-playback8 speaker" />
     </path>
 
+    <path name="compress-offload-playback8 speaker-and-bt-sco-swb">
+        <path name="compress-offload-playback8 speaker-and-bt-sco-wb" />
+    </path>
+
     <path name="compress-offload-playback9">
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia16" value="1" />
     </path>
@@ -1905,6 +1997,10 @@
     <path name="compress-offload-playback9 bt-sco-wb">
         <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="compress-offload-playback9 bt-sco" />
+    </path>
+
+    <path name="compress-offload-playback9 bt-sco-swb">
+        <path name="compress-offload-playback9 bt-sco-wb" />
     </path>
 
     <path name="compress-offload-playback9 speaker-and-display-port">
@@ -1969,6 +2065,10 @@
         <path name="compress-offload-playback9 speaker" />
     </path>
 
+    <path name="compress-offload-playback9 speaker-and-bt-sco-swb">
+        <path name="compress-offload-playback9 speaker-and-bt-sco-wb" />
+    </path>
+
     <path name="audio-record">
         <ctl name="MultiMedia1 Mixer TX_CDC_DMA_TX_3" value="1" />
     </path>
@@ -1990,6 +2090,10 @@
         <path name="audio-record bt-sco" />
     </path>
 
+    <path name="audio-record bt-sco-swb">
+        <path name="audio-record bt-sco-wb" />
+    </path>
+
     <path name="audio-record capture-fm">
         <ctl name="MultiMedia1 Mixer TERT_MI2S_TX" value="1" />
     </path>
@@ -2009,6 +2113,10 @@
     <path name="audio-record-compress bt-sco-wb">
         <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="audio-record-compress bt-sco" />
+    </path>
+
+    <path name="audio-record-compress bt-sco-swb">
+            <path name="audio-record-compress bt-sco-wb" />
     </path>
 
     <path name="audio-record-compress usb-headset-mic">
@@ -2036,6 +2144,10 @@
         <path name="audio-record-compress2 bt-sco" />
     </path>
 
+    <path name="audio-record-compress2 bt-sco-swb">
+        <path name="audio-record-compress2 bt-sco-wb" />
+    </path>
+
     <path name="low-latency-record">
       <ctl name="MultiMedia8 Mixer TX_CDC_DMA_TX_3" value="1" />
     </path>
@@ -2051,6 +2163,10 @@
     <path name="low-latency-record bt-sco-wb">
         <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="low-latency-record bt-sco" />
+    </path>
+
+    <path name="low-latency-record bt-sco-swb">
+        <path name="low-latency-record bt-sco-wb" />
     </path>
 
     <path name="low-latency-record usb-headset-mic">
@@ -2093,6 +2209,10 @@
         <path name="incall-rec-uplink" />
     </path>
 
+    <path name="incall-rec-uplink bt-sco-swb">
+        <path name="incall-rec-uplink bt-sco-wb" />
+    </path>
+
     <path name="incall-rec-uplink usb-headset-mic">
         <path name="incall-rec-uplink" />
     </path>
@@ -2125,6 +2245,10 @@
         <path name="incall-rec-uplink-compress" />
     </path>
 
+    <path name="incall-rec-uplink-compress bt-sco-swb">
+        <path name="incall-rec-uplink-compress bt-sco-wb" />
+    </path>
+
     <path name="incall-rec-uplink-compress usb-headset-mic">
         <path name="incall-rec-uplink-compress" />
     </path>
@@ -2143,6 +2267,10 @@
 
     <path name="incall-rec-downlink bt-sco-wb">
         <path name="incall-rec-downlink" />
+    </path>
+
+    <path name="incall-rec-downlink bt-sco-swb">
+        <path name="incall-rec-downlink bt-sco-wb" />
     </path>
 
     <path name="incall-rec-downlink usb-headset-mic">
@@ -2176,6 +2304,10 @@
         <path name="incall-rec-downlink-compress" />
     </path>
 
+    <path name="incall-rec-downlink-compress bt-sco-swb">
+        <path name="incall-rec-downlink-compress bt-sco-wb" />
+    </path>
+
     <path name="incall-rec-downlink-compress usb-headset-mic">
         <path name="incall-rec-downlink-compress" />
     </path>
@@ -2185,8 +2317,8 @@
     </path>
 
     <path name="incall-rec-uplink-and-downlink">
-        <path name="incall-rec-uplink" />
-        <path name="incall-rec-downlink" />
+        <ctl name="MultiMedia2 Mixer VOC_REC_UL" value="1" />
+        <ctl name="MultiMedia2 Mixer VOC_REC_DL" value="1" />
     </path>
 
     <path name="incall-rec-uplink-and-downlink bt-sco">
@@ -2195,6 +2327,10 @@
 
     <path name="incall-rec-uplink-and-downlink bt-sco-wb">
         <path name="incall-rec-uplink-and-downlink" />
+    </path>
+
+    <path name="incall-rec-uplink-and-downlink bt-sco-swb">
+        <path name="incall-rec-uplink-and-downlink bt-sco-wb" />
     </path>
 
     <path name="incall-rec-uplink-and-downlink usb-headset-mic">
@@ -2228,6 +2364,10 @@
 
     <path name="incall-rec-uplink-and-downlink-compress bt-sco-wb">
         <path name="incall-rec-uplink-and-downlink-compress" />
+    </path>
+
+    <path name="incall-rec-uplink-and-downlink-compress bt-sco-swb">
+        <path name="incall-rec-uplink-and-downlink-compress bt-sco-wb" />
     </path>
 
     <path name="incall-rec-uplink-and-downlink-compress usb-headset-mic">
@@ -2285,6 +2425,10 @@
     <path name="compress-voip-call bt-sco-wb">
         <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="compress-voip-call bt-sco" />
+    </path>
+
+    <path name="compress-voip-call bt-sco-swb">
+        <path name="compress-voip-call bt-sco-wb" />
     </path>
 
     <path name="compress-voip-call afe-proxy">
@@ -2349,6 +2493,10 @@
     <path name="voicemmode1-call bt-sco-wb">
         <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="voicemmode1-call bt-sco" />
+    </path>
+
+    <path name="voicemmode1-call bt-sco-swb">
+        <path name="voicemmode1-call bt-sco-wb" />
     </path>
 
     <path name="voicemmode1-call afe-proxy">
@@ -2418,6 +2566,10 @@
     <path name="voicemmode2-call bt-sco-wb">
         <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="voicemmode2-call bt-sco" />
+    </path>
+
+    <path name="voicemmode2-call bt-sco-swb">
+        <path name="voicemmode2-call bt-sco-wb" />
     </path>
 
     <path name="voicemmode2-call afe-proxy">
@@ -2495,6 +2647,10 @@
         <path name="audio-playback-voip bt-sco" />
     </path>
 
+    <path name="audio-playback-voip bt-sco-swb">
+        <path name="audio-playback-voip bt-sco-wb" />
+    </path>
+
     <path name="audio-playback-voip bt-a2dp">
         <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia10" value="1" />
     </path>
@@ -2541,6 +2697,11 @@
         <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="audio-record-voip bt-sco" />
     </path>
+
+    <path name="audio-record-voip bt-sco-swb">
+        <path name="audio-record-voip bt-sco-wb" />
+    </path>
+
    <path name="spkr-rx-calib">
         <ctl name="SLIMBUS_DL_HL Switch"  value="1" />
     </path>
@@ -2776,6 +2937,7 @@
         <path name="dmic2" />
         <ctl name="TX_DEC2 Volume" value="106" />
     </path>
+
 
     <path name="handset-mic">
         <ctl name="TX DEC0 MUX" value="MSM_DMIC" />
@@ -3198,6 +3360,12 @@
     </path>
 
     <path name="bt-sco-mic-wb">
+    </path>
+
+    <path name="bt-sco-headset-swb">
+    </path>
+
+    <path name="bt-sco-mic-swb">
     </path>
 
     <path name="usb-headset-mic">
@@ -3989,6 +4157,10 @@
         <path name="mmap-playback bt-sco" />
     </path>
 
+    <path name="mmap-playback bt-sco-swb">
+        <path name="mmap-playback bt-sco-wb" />
+    </path>
+
     <path name="mmap-playback afe-proxy">
         <ctl name="AFE_PCM_RX Audio Mixer MultiMedia16" value="1" />
     </path>
@@ -4039,6 +4211,10 @@
     <path name="mmap-record bt-sco-wb">
         <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="mmap-record bt-sco" />
+    </path>
+
+    <path name="mmap-record bt-sco-swb">
+        <path name="mmap-record bt-sco-wb" />
     </path>
 
     <path name="mmap-record capture-fm">
@@ -4110,6 +4286,10 @@
 
     <path name="incall_music_uplink bt-sco-wb">
         <path name="incall_music_uplink" />
+    </path>
+
+    <path name="incall_music_uplink bt-sco-swb">
+        <path name="incall_music_uplink bt-sco-wb" />
     </path>
 
     <path name="incall_music_uplink hearing-aid">
@@ -4193,6 +4373,10 @@
     </path>
 
     <path name="incall_music_uplink2 bt-sco-wb">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 bt-sco-swb">
         <path name="incall_music_uplink2" />
     </path>
 
