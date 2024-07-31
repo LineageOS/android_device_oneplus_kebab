@@ -2317,8 +2317,8 @@
     </path>
 
     <path name="incall-rec-uplink-and-downlink">
-        <ctl name="MultiMedia2 Mixer VOC_REC_UL" value="1" />
-        <ctl name="MultiMedia2 Mixer VOC_REC_DL" value="1" />
+        <path name="incall-rec-uplink" />
+        <path name="incall-rec-downlink" />
     </path>
 
     <path name="incall-rec-uplink-and-downlink bt-sco">
