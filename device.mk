@@ -44,6 +44,9 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Touch
+$(call soong_config_set,OPLUS_LINEAGE_TOUCH_HAL,INCLUDE_DIR,$(LOCAL_PATH)/touch/include)
+
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/oneplus/sm8250-common/common.mk)
 
