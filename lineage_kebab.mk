@@ -20,14 +20,12 @@ PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := KB2005
 
-PRODUCT_SYSTEM_NAME := OnePlus8T
-PRODUCT_SYSTEM_DEVICE := OnePlus8T
-
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="OnePlus8T-user 14 UKQ1.230924.001 R.1887f28-81d9-81db release-keys" \
-    TARGET_DEVICE=$(PRODUCT_SYSTEM_DEVICE) \
-    TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
-
-BUILD_FINGERPRINT := OnePlus/OnePlus8T/OnePlus8T:14/UKQ1.230924.001/R.1887f28-81d9-81db:user/release-keys
+    DeviceName=OnePlus8T \
+    DeviceProduct=OnePlus8T \
+    SystemName=OnePlus8T \
+    SystemDevice=OnePlus8T \
+    BuildDesc="OnePlus8T-user 14 UKQ1.230924.001 R.1887f28-81d9-81db release-keys" \
+    BuildFingerprint=OnePlus/OnePlus8T/OnePlus8T:14/UKQ1.230924.001/R.1887f28-81d9-81db:user/release-keys
