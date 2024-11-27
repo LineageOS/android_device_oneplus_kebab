@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from OnePlus 8T (KB2005_14.0.0.602(EX01)).
+## from OnePlus 8T (KB2005_14.0.0.603(EX01)).
 
 # ACDB
 odm/etc/acdbdata/Audio_Parameter_Version.txt
