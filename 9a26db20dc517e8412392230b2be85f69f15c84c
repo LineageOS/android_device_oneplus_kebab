@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "66dbebfa_fb551b00",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-04-01T06:47:12Z",
+      "side": 1,
+      "message": "it you want to match the screen corners, use px instead of dp as otherwise it\u0027ll only match them at whatever density you tested it on",
+      "revId": "9a26db20dc517e8412392230b2be85f69f15c84c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
